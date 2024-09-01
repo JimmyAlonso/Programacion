@@ -67,20 +67,20 @@ public class App {
         String numero = "3314677519";
         boolean existe = contactos.validarNombreyTelefono(apodo, numero);
         if(existe){ 
-            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " ya existe");
+            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " ya existe\n");
         }else{
-            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " no existe");
+            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " no existe\n");
         }
 
         //Verificar si el contacto ya existe en reunion
 
-        String apodoDos = "Maria";
-        String numeroDos = "3314677519";
-        boolean existeDos = reunion.validarNombreyTelefonoReunion(apodoDos, numeroDos);
+        String apodoDos = "Mar";
+        String numeroDos = "331466519";
+        boolean existeDos = reunion.validarNombreyTelefono(apodoDos, numeroDos);
         if(existeDos){ 
-            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " ya existe");
+            Contacto.mostrarMensaje("El estudiante " +apodoDos+ " con el telefono " +numeroDos+ " ya existe\n");
         }else{
-            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " no existe");
+            Contacto.mostrarMensaje("El estudiante " +apodoDos+ " con el telefono " +numeroDos+ " no existe\n");
         }
 
         //Eliminar un contacto en grupos
@@ -102,7 +102,7 @@ public class App {
 
         //Actualizar un contacto en grupos
 
-        contactos.actualizarContactos("Juanito", "3324847738", "juantito@gmail.com");
+        contactos.actualizarContactos("324354657", "Daniel", "danieeel@gmail.com");
         Contacto.mostrarMensaje(reunion.toString());
         Contacto.mostrarMensaje(contactos.toString());
         Contacto.mostrarMensaje(contactos2.toString());
@@ -111,7 +111,7 @@ public class App {
 
         //Actualizar un contacto en reunion
 
-        reunion.actualizarContactosReunion("Juanito", "3324847738", "juantito@gmail.com");
+        reunion.actualizarContactosReunion("343354657", "Sebas", "seeebs@gmail.com");
         Contacto.mostrarMensaje(reunion.toString());
         Contacto.mostrarMensaje(contactos.toString());
         Contacto.mostrarMensaje(contactos2.toString());
