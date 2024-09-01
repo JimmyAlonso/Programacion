@@ -2,7 +2,7 @@ package co.edu.uniquindio.poo;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-
+//Jimmy es gay
 public class App {
     public static void main(String[] args) {
         Contacto contacto1 = new Contacto("Jimmy", "Alonso", "Cra 13", "3122047519", "Jimmy@gmail.com");
