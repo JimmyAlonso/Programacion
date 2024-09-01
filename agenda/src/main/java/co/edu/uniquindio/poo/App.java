@@ -7,8 +7,8 @@ public class App {
     public static void main(String[] args) { 
 
         Contacto contacto1 = new Contacto("Jimmy", "Alonso", "Cra 13", "3122047519", "JimmyAlonsoG@gmail.com");
-        Contacto contacto2 = new Contacto("Sebastian", "Arango", "Cra 13", "31467047519", "sebasaArango@gmail.com");
-        Contacto contacto3 = new Contacto("Johanna", "Acevedo", "Cra 13", "3122047568", "JohannaAcevedo@gmail.com");
+        Contacto contacto2 = new Contacto("Sebastian", "Arango", "Cra 17", "31467047519", "sebasaArango@gmail.com");
+        Contacto contacto3 = new Contacto("Johanna", "Acevedo", "Cra 21", "3122047568", "JohannaAcevedo@gmail.com");
         Contacto contacto4 = new Contacto("Yeimy", "Daniela", "Cra 16", "3126747568", "yeimyD.rodriguez@gmail.com");
         Contacto contacto5 = new Contacto("Daniel", "Tellez", "Cra 17", "3127847568", "danielTtellez@gmail.com");
         Contacto contacto6 = new Contacto("Michael", "Murillo", "Cra 19", "312235568", "MichaelMurilloo78@gmail.com");

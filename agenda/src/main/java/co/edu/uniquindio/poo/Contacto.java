@@ -65,7 +65,7 @@ public class Contacto {      //Se crean los atributos
 
     @Override
     public String toString() {                                                            // Se crea el toString
-        return "\nNombre: " + nombres + "\nAlias:" + alias + "\nDireccion : " + direccion + "\nTelefono : "
+        return "\nNombre: " + nombres + "\nAlias: " + alias + "\nDireccion : " + direccion + "\nTelefono : "
                 + telefono + "\nCorreo : " + email+"\n\n";
     }
     

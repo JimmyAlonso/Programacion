@@ -44,7 +44,7 @@ public class Grupo {                                    //Se crean los atributos
 
     @Override
     public String toString() {
-        return "El nombre del grupo es : " + nombre + " La categoria es : " +categoria+ " y se encuentran : \n"+listaDeContactos;
+        return "El nombre del grupo es : " + nombre + ", la categoria es : " +categoria+ " y se encuentran las siguientes personas : \n"+listaDeContactos;
     }
 
     public void agregarContacto(Contacto contacto){                                             //Funcion para agregar contactos a lista de contactos
