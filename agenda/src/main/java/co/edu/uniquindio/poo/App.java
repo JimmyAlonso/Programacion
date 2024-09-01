@@ -61,12 +61,23 @@ public class App {
         Contacto.mostrarMensaje(contactos4.toString());
 
 
-        //Verificar si el contacto ya existe, funciona para todo el codigo
+        //Verificar si el contacto ya existe en grupos
         
         String apodo = "Maria";
         String numero = "3314677519";
         boolean existe = contactos.validarNombreyTelefono(apodo, numero);
         if(existe){ 
+            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " ya existe");
+        }else{
+            Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " no existe");
+        }
+
+        //Verificar si el contacto ya existe en reunion
+
+        String apodoDos = "Maria";
+        String numeroDos = "3314677519";
+        boolean existeDos = reunion.validarNombreyTelefonoReunion(apodoDos, numeroDos);
+        if(existeDos){ 
             Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " ya existe");
         }else{
             Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " no existe");

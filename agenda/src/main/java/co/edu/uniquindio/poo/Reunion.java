@@ -46,8 +46,21 @@ public class Reunion {                                                      //Se
                 + asistentes;
     }
     
-    public void agregarContactoReunion(Contacto contacto){                      //Funcion para agregar un contacto a la lista Asistentes
-        asistentes.add(contacto);
+    public void agregarContactoReunion(Contacto contacto){                                             //Funcion para agregar contactos a lista de contactos
+        if(validarNombreyTelefonoReunion(contacto.getNombres(), contacto.getTelefono())){
+            Contacto.mostrarMensaje("Error el contacto ya esta registrado \n\n");
+        }else {
+            asistentes.add(contacto);
+        }
+    }
+    
+    public boolean validarNombreyTelefonoReunion(String nombres, String telefono){                      //Funcion para validar que el nombre y el telfono
+        for (Contacto contacto : asistentes) {                                                   // no sean los mismos
+            if (contacto.getNombres().equals(nombres)){
+                if(contacto.getTelefono().equals(telefono))
+                return true;
+            }
+        } return false;
     }
     
     public void eliminarContacto(String nombres, String telefono){              //Funcion para eliminar un contacto en reunion
