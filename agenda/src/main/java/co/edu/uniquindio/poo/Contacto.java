@@ -1,21 +1,29 @@
 package co.edu.uniquindio.poo;
 
-public class Contacto {             //Se crean los atributos
+public class Contacto {      //Se crean los atributos 
     private String nombres;
-    private String apellidos;      
+    private String alias;      
     private String direccion;
     private String telefono;
-    private String correo;
+    private String email;
     
-    public Contacto(String nombres, String apellidos, String direccion, String telefono, String correo) {           //Se crea el constructor
+    public Contacto(String nombres, String alias, String direccion, String telefono, String email) {   //Se crea el constructor
         this.nombres = nombres;
-        this.apellidos = apellidos;
+        this.alias = alias;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.correo = correo;
+        this.email = email;
+        assert !nombres.isBlank();
+        assert !alias.isBlank();
+        assert !direccion.isBlank();
+        assert !telefono.isBlank();
+        assert !email.isBlank();
+        assert email.contains("@");
     }
 
-    public String getNombres() {                //Se crean los Setters y Getters
+
+    
+    public String getNombres() {                
         return nombres;
     }
 
@@ -23,12 +31,12 @@ public class Contacto {             //Se crean los atributos
         this.nombres = nombres;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getAlias() {
+        return alias;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 
     public String getDireccion() {
@@ -47,18 +55,18 @@ public class Contacto {             //Se crean los atributos
         this.telefono = telefono;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setCorreo(String email) {
+        this.email = email;
     }
 
     @Override
-    public String toString() {                                                                          // Se crea el toString
-        return " - " + nombres + " " + apellidos + "\nDireccion : " + direccion + "\nTelefono : "
-                + telefono + "\nCorreo : " + correo+"\n\n";
+    public String toString() {                                                            // Se crea el toString
+        return "\nNombre: " + nombres + "\nAlias:" + alias + "\nDireccion : " + direccion + "\nTelefono : "
+                + telefono + "\nCorreo : " + email+"\n\n";
     }
     
     public static void mostrarMensaje(String mensaje){

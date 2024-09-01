@@ -14,6 +14,8 @@ public class Grupo {                                    //Se crean los atributos
         this.nombre = nombre;
         this.categoria = categoria;
         listaDeContactos = new LinkedList<>();
+        assert !nombre.isBlank();
+
     }
 
     public String getNombre() {

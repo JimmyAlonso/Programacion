@@ -3,17 +3,18 @@ package co.edu.uniquindio.poo;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class App {
-    public static void main(String[] args) {
-        Contacto contacto1 = new Contacto("Jimmy", "Alonso", "Cra 13", "3122047519", "Jimmy@gmail.com");
-        Contacto contacto2 = new Contacto("Sebas", "Alonso", "Cra 13", "31467047519", "sebas@gmail.com");
-        Contacto contacto3 = new Contacto("Guider", "Alonso", "Cra 13", "3122047568", "guider@gmail.com");
-        Contacto contacto4 = new Contacto("Yeimy", "Daniela", "Cra 16", "3126747568", "yeimy@gmail.com");
-        Contacto contacto5 = new Contacto("Daniel", "calderon", "Cra 17", "3127847568", "daniel@gmail.com");
-        Contacto contacto6 = new Contacto("Maicol", "murillo", "Cra 19", "312235568", "maicol@gmail.com");
-        Contacto contacto7 = new Contacto("Juanes", "herrera", "Cra 12", "3129867568", "juanes@gmail.com");
+public class App { 
+    public static void main(String[] args) { 
 
-        //Se creo la reunion y se agregaron los integrantes
+        Contacto contacto1 = new Contacto("Jimmy", "Alonso", "Cra 13", "3122047519", "JimmyAlonsoG@gmail.com");
+        Contacto contacto2 = new Contacto("Sebastian", "Arango", "Cra 13", "31467047519", "sebasaArango@gmail.com");
+        Contacto contacto3 = new Contacto("Johanna", "Acevedo", "Cra 13", "3122047568", "JohannaAcevedo@gmail.com");
+        Contacto contacto4 = new Contacto("Yeimy", "Daniela", "Cra 16", "3126747568", "yeimyD.rodriguez@gmail.com");
+        Contacto contacto5 = new Contacto("Daniel", "Tellez", "Cra 17", "3127847568", "danielTtellez@gmail.com");
+        Contacto contacto6 = new Contacto("Michael", "Murillo", "Cra 19", "312235568", "MichaelMurilloo78@gmail.com");
+        Contacto contacto7 = new Contacto("Dahiana", "Rivera", "Cra 12", "3129867568", "DahianaRivera58@gmail.com");
+
+        //Se creo la clase reunión y se agregaron los integrantes.
 
         Reunion reunion = new Reunion("Reunion de familia", LocalDate.now(), LocalTime.now());
         reunion.agregarContactoReunion(contacto1);
@@ -22,7 +23,7 @@ public class App {
 
         Contacto.mostrarMensaje(reunion.toString());
 
-        //Se crearon los grupos y/o categorias FAMILIA, AMIGOS, OFICINA, FIESTA
+        //Se crearon los grupos y/o categorias FAMILIA, AMIGOS, OFICINA, FIESTA.
 
         Grupo contactos = new Grupo("Familia", Grupo.Categoria.FAMILIA);
         contactos.agregarContacto(contacto1);
@@ -61,7 +62,7 @@ public class App {
         Contacto.mostrarMensaje(contactos4.toString());
 
 
-        //Verificar si el contacto ya existe en grupos
+        //Se verifica si el contacto ya existe en la clase grupos
         
         String apodo = "Maria";
         String numero = "3314677519";
@@ -72,7 +73,7 @@ public class App {
             Contacto.mostrarMensaje("El estudiante " +apodo+ " con el telefono " +numero+ " no existe\n");
         }
 
-        //Verificar si el contacto ya existe en reunion
+        //Verificar si el contacto ya existe en la clase reunion
 
         String apodoDos = "Mar";
         String numeroDos = "331466519";
@@ -92,7 +93,8 @@ public class App {
         Contacto.mostrarMensaje(contactos3.toString());
         Contacto.mostrarMensaje(contactos4.toString());
 
-        //Eliminar un contacto en reunion
+        //Eliminar un contacto en clase reunion
+
         reunion.eliminarContacto("Jimmy", "3122047519");
         Contacto.mostrarMensaje(reunion.toString());
         Contacto.mostrarMensaje(contactos.toString());
@@ -100,7 +102,7 @@ public class App {
         Contacto.mostrarMensaje(contactos3.toString());
         Contacto.mostrarMensaje(contactos4.toString());
 
-        //Actualizar un contacto en grupos
+        //Actualizar un contacto en la clase grupo
 
         contactos.actualizarContactos("324354657", "Daniel", "danieeel@gmail.com");
         Contacto.mostrarMensaje(reunion.toString());
@@ -109,7 +111,7 @@ public class App {
         Contacto.mostrarMensaje(contactos3.toString());
         Contacto.mostrarMensaje(contactos4.toString());
 
-        //Actualizar un contacto en reunion
+        //Actualizar un contacto en la clase reunion
 
         reunion.actualizarContactosReunion("343354657", "Sebas", "seeebs@gmail.com");
         Contacto.mostrarMensaje(reunion.toString());

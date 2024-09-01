@@ -4,17 +4,18 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.LinkedList;
 
-public class Reunion {                                                      //Se crean Atributos, constructor, getters, setters y toString
-    private String descripcion;                                             //para la clase reunion
+public class Reunion {                         //Se crean Atributos, constructor, getters, setters y toString
+    private String descripcion;                //para la clase reunion
     private LocalDate fecha;
     private LocalTime hora;
-    private LinkedList<Contacto> asistentes;
+    private LinkedList<Contacto> asistentes; 
     
     public Reunion(String descripcion, LocalDate fecha, LocalTime hora) {
         this.descripcion = descripcion;
         this.fecha = fecha;
         this.hora = hora;
         asistentes = new LinkedList<>();
+        assert !descripcion.isBlank();
     }
     public String getDescripcion() {
         return descripcion;
@@ -46,16 +47,16 @@ public class Reunion {                                                      //Se
                 + asistentes;
     }
     
-    public void agregarContactoReunion(Contacto contacto){                                             //Funcion para agregar contactos a lista de contactos
+    public void agregarContactoReunion(Contacto contacto){                                             //Función para agregar contactos a lista de contactos
         if(validarNombreyTelefono(contacto.getNombres(), contacto.getTelefono())){
-            Contacto.mostrarMensaje("Error el contacto ya esta registrado \n\n");
+            Contacto.mostrarMensaje("Error, el contacto ya esta registrado \n\n");
         }else {
             asistentes.add(contacto);
         }
     }
     
-    public boolean validarNombreyTelefono(String nombres, String telefono){                      //Funcion para validar que el nombre y el telfono
-        for (Contacto contacto : asistentes) {                                                   // no sean los mismos
+    public boolean validarNombreyTelefono(String nombres, String telefono){                      //Función para validar que el nombre y el telefono
+        for (Contacto contacto : asistentes) {                                                   //no sean los mismos
             if (contacto.getNombres().equals(nombres)){
                 if(contacto.getTelefono().equals(telefono))
                 return true;
@@ -63,7 +64,7 @@ public class Reunion {                                                      //Se
         } return false;
     }
     
-    public void eliminarContacto(String nombres, String telefono){              //Funcion para eliminar un contacto en reunion
+    public void eliminarContacto(String nombres, String telefono){              //Función para eliminar un contacto en la clase reunion
         for (Contacto contacto : asistentes) {
             if (contacto.getNombres().equals(nombres)){
                 if(contacto.getTelefono().equals(telefono))
@@ -73,7 +74,7 @@ public class Reunion {                                                      //Se
         }
     }
 
-    public void actualizarContactosReunion(String telefono, String nombres, String correo){             //Funcion para actualizar un contacto en reunion
+    public void actualizarContactosReunion(String telefono, String nombres, String correo){             //Función para actualizar un contacto en la clase reunion
         for (Contacto contacto:asistentes){
             if (contacto.getNombres().equals(nombres)){
                 contacto.setTelefono(telefono);
