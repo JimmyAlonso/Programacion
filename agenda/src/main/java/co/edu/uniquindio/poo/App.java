@@ -15,6 +15,8 @@ public class App {
         Contacto contacto6 = new Contacto("Michael", "Murillo", "Cra 19", "312235568", "MichaelMurilloo78@gmail.com");
         Contacto contacto7 = new Contacto("Dahiana", "Rivera", "Cra 12", "3129867568", "DahianaRivera58@gmail.com");
 
+
+        
         //Se creo la clase reunión y se agregaron los integrantes.
 
         Reunion reunion = new Reunion("Reunion de familia", LocalDate.now(), LocalTime.now());
@@ -22,7 +24,6 @@ public class App {
         reunion.agregarContactoReunion(contacto2);
         reunion.agregarContactoReunion(contacto3);
 
-        Contacto.mostrarMensaje(reunion.toString());
 
         //Se crearon los grupos y/o categorias FAMILIA, AMIGOS, OFICINA, FIESTA.
 
@@ -33,7 +34,6 @@ public class App {
         contactos.agregarContacto(contacto4);
         contactos.agregarContacto(contacto5);
 
-        Contacto.mostrarMensaje(contactos.toString());
 
         Grupo contactos2 = new Grupo("Amigos", Grupo.Categoria.AMIGOS);
         contactos2.agregarContacto(contacto6);
@@ -42,7 +42,6 @@ public class App {
         contactos2.agregarContacto(contacto4);
         contactos2.agregarContacto(contacto5);
 
-        Contacto.mostrarMensaje(contactos2.toString());
 
         Grupo contactos3 = new Grupo("Oficina", Grupo.Categoria.OFICINA);
         contactos3.agregarContacto(contacto3);
@@ -51,7 +50,6 @@ public class App {
         contactos3.agregarContacto(contacto4);
         contactos3.agregarContacto(contacto7);
 
-        Contacto.mostrarMensaje(contactos3.toString());
 
         Grupo contactos4 = new Grupo("Fiesta", Grupo.Categoria.FIESTA);
         contactos4.agregarContacto(contacto6);
@@ -60,8 +58,21 @@ public class App {
         contactos4.agregarContacto(contacto4);
         contactos4.agregarContacto(contacto2);
 
-        Contacto.mostrarMensaje(contactos4.toString());
 
+
+        //Se creo la clase agenda
+
+        Agenda1 agenda = new Agenda1("Mi agenda");
+        agenda.agregarContacto(contacto1);
+        agenda.agregarContacto(contacto2);
+        agenda.agregarContacto(contacto3);
+        agenda.agregarReunion(reunion);
+        agenda.agregarGrupos(contactos);
+        agenda.agregarGrupos(contactos2);
+        agenda.agregarGrupos(contactos3);
+        agenda.agregarGrupos(contactos4);
+
+        Contacto.mostrarMensaje(agenda.toString());
 
         //Se verifica si el contacto ya existe en la clase grupos
         
