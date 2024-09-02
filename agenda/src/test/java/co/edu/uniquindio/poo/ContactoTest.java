@@ -1,8 +1,8 @@
 package co.edu.uniquindio.poo;
 
 import java.util.logging.Logger;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import org.junit.jupiter.api.Test; 
+import static org.junit.jupiter.api.Assertions.assertThrows; 
 
 public class ContactoTest {
     private static final Logger LOG = Logger.getLogger(ContactoTest.class.getName());

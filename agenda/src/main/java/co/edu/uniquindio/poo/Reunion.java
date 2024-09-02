@@ -2,7 +2,7 @@ package co.edu.uniquindio.poo;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.LinkedList;
+import java.util.LinkedList; 
 
 public class Reunion {                         //Se crean Atributos, constructor, getters, setters y toString
     private String descripcion;                //para la clase reunion

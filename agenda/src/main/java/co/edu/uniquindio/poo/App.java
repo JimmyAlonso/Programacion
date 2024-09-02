@@ -1,10 +1,11 @@
 package co.edu.uniquindio.poo;
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class App { 
     public static void main(String[] args) { 
+
+        //Se crearon los contactos 
 
         Contacto contacto1 = new Contacto("Jimmy", "Alonso", "Cra 13", "3122047519", "JimmyAlonsoG@gmail.com");
         Contacto contacto2 = new Contacto("Sebastian", "Arango", "Cra 17", "31467047519", "sebasaArango@gmail.com");
@@ -28,7 +29,7 @@ public class App {
         Grupo contactos = new Grupo("Familia", Grupo.Categoria.FAMILIA);
         contactos.agregarContacto(contacto1);
         contactos.agregarContacto(contacto2);
-        contactos.agregarContacto(contacto3);
+        contactos.agregarContacto(contacto3); 
         contactos.agregarContacto(contacto4);
         contactos.agregarContacto(contacto5);
 
