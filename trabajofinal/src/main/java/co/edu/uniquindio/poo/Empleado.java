@@ -8,9 +8,7 @@ public class Empleado extends Usuario {
 
     @Override
     public String toString() {
-        return "Empleado []"+super.toString();
+        return "Empleado []" + super.toString();
     }
-    
-    
-    
+
 }
