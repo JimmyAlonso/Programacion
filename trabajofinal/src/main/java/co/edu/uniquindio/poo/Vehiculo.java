@@ -2,7 +2,7 @@ package co.edu.uniquindio.poo;
 
 import java.util.Scanner;
 
-public abstract class Vehiculo {
+public class Vehiculo {
     private String marca;
     private String modelo;
     private String estado;
@@ -86,7 +86,7 @@ public abstract class Vehiculo {
                 + ", tipoDeTransmision=" + tipoDeTransmision + "]";
     }
 
-    public abstract void mostrarDetalles();
+
 
     public static int ingresarEntero(String mensaje){
         Scanner scanner = new Scanner(System.in);
