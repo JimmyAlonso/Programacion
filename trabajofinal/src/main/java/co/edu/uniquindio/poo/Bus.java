@@ -106,4 +106,11 @@ public class Bus extends Vehiculo {
                 + nBolsasAire + ", ABS=" + ABS + ", nEjes=" + nEjes + ", nSalidaEmergencia=" + nSalidaEmergencia + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
 }

@@ -85,4 +85,12 @@ public class Van extends Vehiculo {
                 + nBolsasAire + ", ABS=" + ABS + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
+
 }

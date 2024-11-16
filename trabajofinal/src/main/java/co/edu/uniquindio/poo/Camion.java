@@ -74,4 +74,12 @@ public class Camion extends Vehiculo {
                 + frenoAire + ", ABS=" + ABS + ", nEjes=" + nEjes + ", tipoCamion=" + tipoCamion + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
+
 }

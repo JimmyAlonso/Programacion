@@ -96,4 +96,11 @@ public class PickUp extends Vehiculo {
                 + cuatrox4 + ", capacidadCajaCarga=" + capacidadCajaCarga + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+    
+
 }

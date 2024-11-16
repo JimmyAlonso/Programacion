@@ -129,4 +129,12 @@ public class Sedan extends Vehiculo {
                 + ", asistentePermanenciaCarril=" + asistentePermanenciaCarril + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
+
 }

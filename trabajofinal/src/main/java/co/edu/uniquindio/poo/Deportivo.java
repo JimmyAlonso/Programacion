@@ -64,4 +64,11 @@ public class Deportivo extends Vehiculo {
                 + nHP + ", tiempo100km=" + tiempo100km + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+    
+
 }

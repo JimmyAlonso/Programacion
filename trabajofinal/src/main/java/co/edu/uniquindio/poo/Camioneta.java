@@ -139,4 +139,11 @@ public class Camioneta extends Vehiculo {
                 + ", asistentePermanenciaCarril=" + asistentePermanenciaCarril + ", cuatrox4=" + cuatrox4 + "]";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
 }

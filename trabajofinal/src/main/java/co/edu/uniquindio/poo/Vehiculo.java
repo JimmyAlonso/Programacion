@@ -1,10 +1,8 @@
 package co.edu.uniquindio.poo;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String marca;
     private String modelo;
     private String estado;
@@ -88,50 +86,18 @@ public class Vehiculo {
                 + ", tipoDeTransmision=" + tipoDeTransmision + "]";
     }
 
-    //Registrar un vehiculo
-    public void registrarVehiculo() {
-        
+    public abstract void mostrarDetalles();
+
+    public static int ingresarEntero(String mensaje){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Registro de Vehículo");
-        
-        System.out.print("Ingrese la marca: ");
-        String marca = scanner.nextLine();
-        
-        System.out.print("Ingrese el modelo: ");
-        String modelo = scanner.nextLine();
-        
-        System.out.print("Ingrese el estado: ");
-        String estado = scanner.nextLine();
+        System.out.println(mensaje);
+        return scanner.nextInt();
 
-        System.out.print("Ingrese el cilindraje: ");
-        String cilindraje = scanner.nextLine();
-
-        System.out.print("Ingrese la velociad maxima: ");
-        String velocidadMaxima = scanner.nextLine();
-
-         // Crear un nuevo objeto Vehiculo
-        Vehiculo nuevoVehiculo = new Vehiculo(marca, modelo, estado, cilindraje, velocidadMaxima, tipoDeCombustible, tipoDeTransmision);
-
-         // Mostrar información del vehículo registrado
-        
-        System.out.println("\nVehículo Registrado:");
-        System.out.println("Marca: " + nuevoVehiculo.getMarca());
-        System.out.println("Modelo: " + nuevoVehiculo.getModelo());
-        System.out.println("Año: " + nuevoVehiculo.getEstado());
-        System.out.println("Placa: " + nuevoVehiculo.getCilindraje());
-        System.out.println("Placa: " + nuevoVehiculo.getVelocidadMaxima());
-        System.out.println("Tipo de combustible: " + nuevoVehiculo.getTipoDeCombustible());
-        System.out.println("Tipo de transmision: " + nuevoVehiculo.getTipoDeTransmision());
-
-        guardarVehiculos(nuevoVehiculo);
 
     }
 
-    private static List<Vehiculo> vehiculosRegistrados = new ArrayList<>();
-
-    public static void guardarVehiculos(Vehiculo vehiculo) {
-        vehiculosRegistrados.add(vehiculo);
+    public static void mostrarMensaje(String mensaje){
+        System.out.println(mensaje);
     }
-
     
 }

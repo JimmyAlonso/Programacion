@@ -12,4 +12,11 @@ public class Moto extends Vehiculo {
         return "Moto []";
     }
 
+    @Override
+    public void mostrarDetalles() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
 }
