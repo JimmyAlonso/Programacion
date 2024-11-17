@@ -4,9 +4,9 @@ public class Usuario {
     private String nombre;
     private String correo;
     private String usuario;
-    private String contraseña;
+    private int contraseña;
 
-    public Usuario(String nombre, String correo, String usuario, String contraseña) {
+    public Usuario(String nombre, String correo, String usuario, int contraseña) {
         this.nombre = nombre;
         this.correo = correo;
         this.usuario = usuario;
@@ -37,18 +37,18 @@ public class Usuario {
         this.usuario = usuario;
     }
 
-    public String getContraseña() {
+    public int getContraseña() {
         return contraseña;
     }
 
-    public void setContraseña(String contraseña) {
+    public void setContraseña(int contraseña) {
         this.contraseña = contraseña;
     }
 
     @Override
     public String toString() {
-        return "Usuario [nombre=" + nombre + ", correo=" + correo + ", usuario=" + usuario + ", contraseña="
-                + contraseña + "]";
+        return "Usuario: Nombre: " + nombre + ", Correo: " + correo + ", Usuario: " + usuario + ", Contraseña: "
+                + contraseña + "";
     }
 
 }

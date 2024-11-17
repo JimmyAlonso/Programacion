@@ -70,16 +70,10 @@ public class Camion extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Camion [capacidadCarga=" + capacidadCarga + ", aireAcondicionado=" + aireAcondicionado + ", frenoAire="
-                + frenoAire + ", ABS=" + ABS + ", nEjes=" + nEjes + ", tipoCamion=" + tipoCamion + "]";
+        return "Camión: Capacidad de carga: " + capacidadCarga + ", Aire acondicionado: " + aireAcondicionado
+                + ", Freno de aire: " + frenoAire + ", ABS: " + ABS + ", Número de ejes: " + nEjes
+                + ", Tipo de camión: " + tipoCamion + ""
+                + super.toString()+"\n";
     }
-
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    
 
 }

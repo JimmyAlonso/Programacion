@@ -19,7 +19,7 @@ public class Van extends Vehiculo {
         this.aireAcondicionado = aireAcondicionado;
         this.camaraReversa = camaraReversa;
         this.nBolsasAire = nBolsasAire;
-        ABS = aBS;
+        this.ABS = aBS;
     }
 
     public int getnPasajero() {
@@ -80,17 +80,10 @@ public class Van extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Van [nPasajero=" + nPasajero + ", nPuerta=" + nPuerta + ", capacidadMaletero=" + capacidadMaletero
-                + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa=" + camaraReversa + ", nBolsasAire="
-                + nBolsasAire + ", ABS=" + ABS + "]";
+        return "Van: Numero de pasajeros: " + nPasajero + " Numero de puertas: " + nPuerta
+                + ", Capacidad del Maletero: " + capacidadMaletero
+                + ", Aire Acondicionado: " + aireAcondicionado + ", Camara de reversa: " + camaraReversa
+                + ", Numero bolsas de Aire: " + nBolsasAire + ", ABS: " + ABS + "" + super.toString()+"\n";
     }
-
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    
 
 }

@@ -9,14 +9,7 @@ public class Moto extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Moto []";
+        return "Moto" + super.toString()+"\n";
     }
 
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    
 }

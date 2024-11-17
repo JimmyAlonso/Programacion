@@ -122,19 +122,13 @@ public class Sedan extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Sedan [nPasajero=" + nPasajero + ", nPuerta=" + nPuerta + ", capacidadMaletero=" + capacidadMaletero
-                + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa=" + camaraReversa
-                + ", velocidadCrucero=" + velocidadCrucero + ", nBolsasAire=" + nBolsasAire + ", ABS=" + ABS
-                + ", sensorcolision=" + sensorcolision + ", sensorTraficoCruzado=" + sensorTraficoCruzado
-                + ", asistentePermanenciaCarril=" + asistentePermanenciaCarril + "]";
+        return "Sedan: Número de Pasajero: " + nPasajero + ", Número de puerta: " + nPuerta
+                + ", Capacidad del maletero: " + capacidadMaletero
+                + ", Aire acondicionado: " + aireAcondicionado + ", Camara de reversa: " + camaraReversa
+                + ", Velocidad del crucero: " + velocidadCrucero + ", Número de bolsas de aire: " + nBolsasAire
+                + ", ABS : " + ABS + ", Sensor de colisión: " + sensorcolision + ", Sensor de tráfico cruzado: "
+                + sensorTraficoCruzado
+                + ", Asistente de permanencia para el carril: " + asistentePermanenciaCarril + "" + super.toString()+"\n";
     }
-
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    
 
 }
