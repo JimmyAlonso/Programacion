@@ -6,11 +6,13 @@ public class Transaccion {
     private String id;
     private LocalDate fecha;
     private TipoTransaccion tipoDeTransaccion;
+    private Empleado empleado;
 
-    public Transaccion(String id, LocalDate fecha, TipoTransaccion tipoDeTransaccion) {
+    public Transaccion(String id, LocalDate fecha, TipoTransaccion tipoDeTransaccion, Empleado empleado) {
         this.id = id;
         this.fecha = fecha;
         this.tipoDeTransaccion = tipoDeTransaccion;
+        this.empleado = empleado;
     }
 
     public String getId() {
@@ -36,10 +38,19 @@ public class Transaccion {
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
+    
 
     @Override
     public String toString() {
-        return "Transaccion [id=" + id + ", fecha=" + fecha + ", tipoDeTransaccion=" + tipoDeTransaccion + "]";
+        return "Transacción: Id: " + id + ", Fecha: " + fecha + ", Tipo de transacción: " + tipoDeTransaccion + "";
+    }
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
     }
 
 }

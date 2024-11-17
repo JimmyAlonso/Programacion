@@ -37,8 +37,9 @@ public class Autenticacion {
 
     @Override
     public String toString() {
-        return "Autenticacion [usuario=" + usuario + ", contraseña=" + contraseña + ", estadoSesion=" + estadoSesion
-                + "]";
+        return "Autenticacion: Usuario: " + usuario + ", Contraseña: " + contraseña + ", Estado de Sesión: "
+                + estadoSesion
+                + "";
     }
 
 }

@@ -101,16 +101,11 @@ public class Bus extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Bus [nPasajero=" + nPasajero + ", nPuerta=" + nPuerta + ", capacidadMaletero=" + capacidadMaletero
-                + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa=" + camaraReversa + ", nBolsasAire="
-                + nBolsasAire + ", ABS=" + ABS + ", nEjes=" + nEjes + ", nSalidaEmergencia=" + nSalidaEmergencia + "]";
+        return "Bus: Número de pasajeros: " + nPasajero + ", Número de Pueras: " + nPuerta + ", Capacidad de maletero: "
+                + capacidadMaletero + ", Aire acondicionado: " + aireAcondicionado + ", camaraReversa: " + camaraReversa
+                + ", nBolsasAire: "
+                + nBolsasAire + ", ABS: " + ABS + ", Número de ejes: " + nEjes + ", Número de salidas de Emergencia: "
+                + nSalidaEmergencia + "" + super.toString()+"\n";
     }
 
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    
 }

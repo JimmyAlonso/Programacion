@@ -50,12 +50,41 @@ public class Reporte {
 
     @Override
     public String toString() {
-        return "Reporte [id=" + id + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", transacciones="
-                + transacciones + "]";
+        return "Reporte: Id" + id + ", Fecha de inicio : " + fechaInicio + ", Fecha de fin : " + fechaFin
+                + ", Transacciones : "
+                + transacciones;
     }
 
-    public void agregarTransaccion(Transaccion transaccion){
+    public void agregarTransaccion(Transaccion transaccion) {
         transacciones.add(transaccion);
-
     }
+
+    // Método para generar el reporte filtrando por empleado, tipo de transacción y fechas
+    public void generarReporte(Empleado empleado, TipoTransaccion tipoTransaccion) {
+        boolean transaccionesEncontradas = false;
+
+        System.out.println("\n--- Reporte de Transacciones ---");
+        System.out.println("Reporte ID: " + id);
+        System.out.println("Fecha de inicio: " + fechaInicio);
+        System.out.println("Fecha de fin: " + fechaFin);
+        System.out.println("Empleado: " + empleado.getNombre());
+        System.out.println("Tipo de Transacción: " + tipoTransaccion);
+
+        // Filtramos las transacciones por empleado, tipo de transacción y rango de fechas
+        for (Transaccion transaccion : transacciones) {
+            if (transaccion.getEmpleado().equals(empleado) &&
+                transaccion.getTipoDeTransaccion().equals(tipoTransaccion) &&
+                !transaccion.getFecha().isBefore(fechaInicio) &&
+                !transaccion.getFecha().isAfter(fechaFin)) {
+
+                System.out.println(transaccion);
+                transaccionesEncontradas = true;
+            }
+        }
+
+        if (!transaccionesEncontradas) {
+            System.out.println("No se encontraron transacciones para el empleado con ese tipo de transacción en el rango de fechas especificado.");
+        }
+    }
+
 }

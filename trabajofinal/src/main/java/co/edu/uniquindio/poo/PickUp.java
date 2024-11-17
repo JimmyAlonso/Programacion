@@ -91,16 +91,11 @@ public class PickUp extends Vehiculo {
 
     @Override
     public String toString() {
-        return "PickUp [nPasajero=" + nPasajero + ", nPuerta=" + nPuerta + ", aireAcondicionado=" + aireAcondicionado
-                + ", camaraReversa=" + camaraReversa + ", nBolsasAire=" + nBolsasAire + ", ABS=" + ABS + ", cuatrox4="
-                + cuatrox4 + ", capacidadCajaCarga=" + capacidadCajaCarga + "]";
+        return "PickUp: Número de pasajeros: " + nPasajero + ", Número de Puertas: " + nPuerta
+                + ", Aire acondicionado: " + aireAcondicionado
+                + ", Cámara de reversa: " + camaraReversa + ", Número de bolsas de aires: " + nBolsasAire + ", ABS: "
+                + ABS + ", 4x4: "
+                + cuatrox4 + ", Capacidad de caja de carga: " + capacidadCajaCarga + "" + super.toString()+"\n";
     }
-
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-    
 
 }

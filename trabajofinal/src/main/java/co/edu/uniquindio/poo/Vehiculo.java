@@ -2,7 +2,7 @@ package co.edu.uniquindio.poo;
 
 import java.util.Scanner;
 
-public abstract class Vehiculo {
+public class Vehiculo {
     private String marca;
     private String modelo;
     private String estado;
@@ -78,26 +78,27 @@ public abstract class Vehiculo {
         this.tipoDeTransmision = tipoDeTransmision;
     }
 
-
     @Override
     public String toString() {
-        return "Vehiculo [marca=" + marca + ", modelo=" + modelo + ", estado=" + estado + ", cilindraje=" + cilindraje
-                + ", velocidadMaxima=" + velocidadMaxima + ", tipoDeCombustible=" + tipoDeCombustible
-                + ", tipoDeTransmision=" + tipoDeTransmision + "]";
+        return "Vehiculo: Marca : " + marca + ", Modelo : " + modelo + ", Estado : " + estado + ", Cilindraje : "
+                + cilindraje
+                + ", Velocidad máxima : " + velocidadMaxima + ", Tipo de combustible : " + tipoDeCombustible
+                + ", Tipo de transmisión : " + tipoDeTransmision + "";
     }
 
-    public abstract void mostrarDetalles();
-
-    public static int ingresarEntero(String mensaje){
+    public static int ingresarEntero(String mensaje) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(mensaje);
         return scanner.nextInt();
 
-
     }
 
-    public static void mostrarMensaje(String mensaje){
+    public static void mostrarMensaje(String mensaje) {
         System.out.println(mensaje);
     }
-    
+
+    public void metodoVenta() {
+        System.out.println("Ejecutando venta");
+    }
+
 }

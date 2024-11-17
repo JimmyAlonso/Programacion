@@ -132,18 +132,14 @@ public class Camioneta extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Camioneta [nPasajero=" + nPasajero + ", nPuerta=" + nPuerta + ", capacidadMaletero=" + capacidadMaletero
-                + ", aireAcondicionado=" + aireAcondicionado + ", camaraReversa=" + camaraReversa
-                + ", velocidadCrucero=" + velocidadCrucero + ", nBolsasAire=" + nBolsasAire + ", ABS=" + ABS
-                + ", sensorcolision=" + sensorcolision + ", sensorTraficoCruzado=" + sensorTraficoCruzado
-                + ", asistentePermanenciaCarril=" + asistentePermanenciaCarril + ", cuatrox4=" + cuatrox4 + "]";
+        return "Camioneta: Número de pasajeros: " + nPasajero + ", Número de puertas: " + nPuerta
+                + ", Capacidad del maletero: " + capacidadMaletero
+                + ", Aire acondicionado: " + aireAcondicionado + ", Camara de reversa: " + camaraReversa
+                + ", Velocidad del crucero: " + velocidadCrucero + ", Número de bolsas de aire: " + nBolsasAire
+                + ", ABS: " + ABS
+                + ", Sensor de Colisión: " + sensorcolision + ", Sensor de tráfico cruzado: " + sensorTraficoCruzado
+                + ", Asistente de permanencia de carril: " + asistentePermanenciaCarril + ", 4x4: " + cuatrox4 + ""
+                + super.toString()+"\n";
     }
 
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    
 }

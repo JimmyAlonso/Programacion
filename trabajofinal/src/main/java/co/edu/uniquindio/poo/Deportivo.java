@@ -60,15 +60,9 @@ public class Deportivo extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Deportivo [nPasajero=" + nPasajero + ", nPuerta=" + nPuerta + ", nBolsasAire=" + nBolsasAire + ", nHP="
-                + nHP + ", tiempo100km=" + tiempo100km + "]";
+        return "Deportivo: Número de pasajeros: " + nPasajero + ", Número de puertas: " + nPuerta
+                + ", Númeroo de bolsas de aire: " + nBolsasAire + ", Número de caballos de Fuerza: "
+                + nHP + ", Tiempo en recorrer 100km: " + tiempo100km + "" + super.toString()+"\n";
     }
-
-    @Override
-    public void mostrarDetalles() {
-        // TODO Auto-generated method stub
-        
-    }
-    
 
 }
