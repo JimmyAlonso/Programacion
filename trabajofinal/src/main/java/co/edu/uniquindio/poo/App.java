@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) {
+        // Crear objeto empresa
+        Concesionario concesionario = new Concesionario("Honda");
         
         //Ceear objeto empleado
         Empleado empleado = new Empleado("Jimmy", "jimmy@gmail.com", "Jimmy Alonso", 3232323);
