@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public enum TipoDeCombustible {
+public enum TipoCombustible {
     GASOLINA,
     DIESEL,
     ELECTRICO,
